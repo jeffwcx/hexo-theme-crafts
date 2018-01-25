@@ -1,0 +1,49 @@
+
+//===================== text =======================
+/**
+ * 文字省略 仅一行
+ */
+@mixin text-ellipsis () {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+//===================== behavior =======================
+/**
+ * 滚动条隐藏
+ */
+@mixin scroll-bar-hide () {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/**
+ * 滚动顺滑
+ */
+@mixin scroll-smooth () {
+  -webkit-overflow-scrolling: touch;
+}
+
+/**
+ * tap点击高亮，默认是没有任何颜色
+ */
+@mixin tap-highlight ($color: rgba(255,255,255,0)) {
+  -webkit-tap-highlight-color: $color;
+}
+
+//===================== button =======================
+/**
+ * 按钮重置，去除一些默认的样式
+ */
+@mixin button-reset () {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  &[disable] {
+    cursor: not-allowed;
+  }
+}

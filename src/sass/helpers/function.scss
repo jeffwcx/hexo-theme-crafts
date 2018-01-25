@@ -1,0 +1,26 @@
+/**
+ * px转换为rem
+ */
+@function px2rem ($px, $base-size: 750px) {
+  @if (unitless($px)) {
+    @warn "Please add unit:px";
+    @return px2rem($px + 0px);
+  }
+  @if (unit($px) == px) {
+    @return ($px / ($base-size / 10)) * 1rem;
+  }
+  @return $px;
+}
+
+/**
+ * px转为em
+ */
+@function px2em ($px, $scale: 2) {
+  @if (unitless($px)) {
+    @warn "Please add unit:px";
+    @return px2em($px + 0px);
+  } @else if (unit($px) == em) {
+    @return $px;
+  }
+  @return ($px / ($scale * 12px)) * 1em;
+}
