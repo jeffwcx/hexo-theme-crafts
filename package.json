@@ -1,10 +1,11 @@
 {
-  "name": "hexo-theme-cool",
+  "name": "hexo-theme-crafts",
   "version": "0.0.8",
-  "description": "A cool theme for hexo!",
+  "description": "Hexo theme made by craftsman.",
   "main": "index.js",
   "scripts": {
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "commit": "git cz"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.3",
@@ -16,6 +17,7 @@
     "clean-webpack-plugin": "^0.1.17",
     "copy-webpack-plugin": "^4.3.0",
     "css-loader": "^0.28.7",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^4.13.1",
     "eslint-config-standard": "^11.0.0-beta.0",
     "eslint-friendly-formatter": "^3.0.0",
@@ -54,7 +56,16 @@
   ],
   "author": "jeffwcx",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeffwcx/hexo-theme-crafts.git"
+  },
   "dependencies": {
     "normalize.css": "^7.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
