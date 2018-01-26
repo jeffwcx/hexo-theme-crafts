@@ -1,0 +1,18 @@
+<!-- Post -->
+{{extend './partial/layout.art'}}
+
+{{block 'header'}}
+  {{include './partial/header/post-header.art'}}
+{{/block}}
+
+{{block 'main'}}
+  <section class="content">
+    {{include './partial/post/article.art'}}
+    {{include './partial/post/pagination.art'}}
+    {{include './partial/post/comments.art'}}
+  </section>
+{{/block}}
+
+{{block 'footer'}}
+  {{include './partial/footer/footer.art'}}
+{{/block}}

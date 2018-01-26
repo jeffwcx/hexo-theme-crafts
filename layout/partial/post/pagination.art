@@ -1,0 +1,4 @@
+<div class="pagination">
+  <div class="btn pagination_btn">prev</div>
+  <div class="btn pagination_btn">next</div>
+</div>

@@ -1,0 +1,16 @@
+<!-- Archive -->
+{{extend './partial/layout.art'}}
+
+{{block 'header'}}
+  {{include './partial/header/post-header.art'}}
+{{/block}}
+
+{{block 'main'}}
+  <section class="content">
+    {{include './partial/archives/archives.art'}}
+  </section>
+{{/block}}
+
+{{block 'footer'}}
+  {{include './partial/footer/footer.art'}}
+{{/block}}

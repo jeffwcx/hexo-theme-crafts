@@ -4,7 +4,9 @@
   "description": "Hexo theme made by craftsman.",
   "main": "index.js",
   "scripts": {
-    "build": "node build/build.js",
+    "dev": "npm run task -- env=dev",
+    "build": "npm run task -- env=prod",
+    "task": "node build/build.js",
     "commit": "git cz"
   },
   "devDependencies": {

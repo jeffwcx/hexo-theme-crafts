@@ -1,0 +1,12 @@
+<header class="header">
+  <div class="logo"></div>
+  <nav class="nav">
+    <ul>
+      <li>Archives</li>
+      <li>Categories</li>
+      <li>Projects</li>
+      <li>About</li>
+    </ul>
+  </nav>
+  <div class="btn btn--search"></div>
+</header>

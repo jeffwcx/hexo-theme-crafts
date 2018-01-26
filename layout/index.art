@@ -1,0 +1,22 @@
+<!-- Index,Home -->
+{{extend './partial/layout.art'}}
+
+{{block 'header'}}
+  {{include './partial/header/header.art'}}
+{{/block}}
+
+{{block 'main'}}
+  <section class="content">
+    <div class="l-left">
+      {{include './partial/index/lastest.art'}}
+      {{include './partial/index/tags.art'}}
+    </div>
+    <div class="l-right">
+      {{include './partial/index/toppost.art'}}
+    </div>
+  </section>
+{{/block}}
+
+{{block 'footer'}}
+  {{include './partial/footer/footer.art'}}
+{{/block}}

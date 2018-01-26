@@ -1,0 +1,11 @@
+<footer class="footer">
+  <div class="contract"></div>
+  <div class="site-info">
+    <div class="site-info_powerd">
+      Powered By Hexo
+    </div>
+    <div class="site-info_copyright">
+      © 2017 Jeff Wang. All rights reserved
+    </div>
+  </div>
+</footer>

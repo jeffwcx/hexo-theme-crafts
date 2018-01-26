@@ -1,0 +1,36 @@
+<div class="comments">
+  <div class="comments_title">100 Response</div>
+  <div class="comments_content">
+    <div class="comment">
+      <div class="comment_top">
+        <div class="l-left">
+          <div class="comment_avatar">
+            <img src="" alt="">
+          </div>
+        </div>
+        <div class="l-right">
+          <div class="comment_name">Jeff Wang</div>
+          <div class="comment_time">2 hours ago</div>
+        </div>
+      </div>
+      <div class="comment_content">
+          It looks like you just deleted/ignored our lovely crafted issue template. It was there for good reasons. Please help us solving your issue by answering the questions asked in this template.
+      </div>
+    </div>
+    <div class="subcomments">
+      <div class="comment comment--sub">
+        <div class="comment_top">
+          <div class="l-left">
+            <div class="comment_name">Jeff Wang</div>
+          </div>
+          <div class="l-right">
+            <div class="comment_time">2 hours ago</div>          
+          </div>
+        </div>
+        <div class="comment_content">
+            It looks like you just deleted/ignored our lovely crafted issue template. It was there for good reasons. Please help us solving your issue by answering the questions asked in this template.          
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>

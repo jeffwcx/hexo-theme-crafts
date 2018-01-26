@@ -1,0 +1,20 @@
+<article class="article">
+  <h1 class="article_title">Writing modular CSS (Part 2) BEM Namespaces</h1>
+  <h4 class="article_info">20 days ago by Jeff Wang </h4>
+  <div class="article_content">
+    <p>
+        Since our industry is awesome, we don’t only have one recommended solution. Experts have jumped in and provided us with suggestions like BEM, OOCSS, SMACSS, Atomic Design and many others.
+    </p>
+  </div>
+  <div class="article_bottom">
+    <div class="article_tags">
+      <span>#CSS</span>
+      <span>#BEM</span>
+      <span>#namespace</span>
+    </div>
+    <div class="article_share">
+      <div class="article_share_title">Share</div>
+      <div class="article_share_list"></div>
+    </div>  
+  </div>
+</article>

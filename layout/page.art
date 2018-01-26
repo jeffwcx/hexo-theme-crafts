@@ -1,0 +1,18 @@
+<!-- Category -->
+{{extend './partial/layout.art'}}
+
+{{block 'header'}}
+  {{include './partial/header/post-header.art'}}
+{{/block}}
+
+{{block 'main'}}
+  <section class="content">
+    {{if page.type === 'category'}}
+    {{include './partial/category/category.art'}}
+    {{/if}}
+  </section>
+{{/block}}
+
+{{block 'footer'}}
+  {{include './partial/footer/footer.art'}}
+{{/block}}
