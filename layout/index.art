@@ -1,6 +1,10 @@
 <!-- Index,Home -->
 {{extend './partial/layout.art'}}
 
+{{block 'styles'}}
+<link rel="stylesheet" href="/css/index.css">
+{{/block}}
+
 {{block 'header'}}
   {{include './partial/header/header.art'}}
 {{/block}}
