@@ -1,3 +1,6 @@
+$defaultWidth: 1000px;
 .container {
-  width: 100%;
+  width: $defaultWidth;
+  margin: auto;
+  overflow: auto;
 }

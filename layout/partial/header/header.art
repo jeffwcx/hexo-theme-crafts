@@ -1,12 +1,18 @@
-<header class="header">
-  <div class="logo"></div>
-  <nav class="nav">
-    <ul>
-      <li>Archives</li>
-      <li>Categories</li>
-      <li>Projects</li>
-      <li>About</li>
-    </ul>
-  </nav>
-  <div class="btn btn--search"></div>
+<header class="header l-row x-between y-center">
+  <div class="header_left l-row y-center">
+    <div class="logo">
+      <img src="" alt="logo">
+    </div>
+    <nav class="nav">
+      <ul class="nav_list">
+        <li>Archives</li>
+        <li>Categories</li>
+        <li>Projects</li>
+        <li>About</li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header_right">
+    <div class="btn btn--search"></div>
+  </div>
 </header>
