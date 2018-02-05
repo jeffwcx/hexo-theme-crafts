@@ -10,12 +10,12 @@
 {{/block}}
 
 {{block 'main'}}
-  <section class="content">
-    <div class="l-left">
+  <section class="l-row index-content">
+    <div class="unit is-origin left-panel">
       {{include './partial/index/lastest.art'}}
       {{include './partial/index/tags.art'}}
     </div>
-    <div class="l-right">
+    <div class="unit is-grow">
       {{include './partial/index/toppost.art'}}
     </div>
   </section>

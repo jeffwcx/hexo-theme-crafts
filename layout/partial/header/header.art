@@ -1,18 +1,16 @@
-<header class="header l-row x-between y-center">
-  <div class="header_left l-row y-center">
-    <div class="logo">
-      <img src="" alt="logo">
+<header class="header">
+  <div class="logo">
+    <img src="" alt="jeff">
+  </div>
+  <nav class="nav">
+    <ul class="nav_list">
+      <li class="nav_list_item"><a href="/archives">Archives</a></li>
+      <li class="nav_list_item"><a href="">Categories</a></li>
+      <li class="nav_list_item"><a href="">Projects</a></li>
+      <li class="nav_list_item"><a href="">About</a></li>
+    </ul>
+    <div class="nav_opts">
+      <div class="btn btn--search"></div>
     </div>
-    <nav class="nav">
-      <ul class="nav_list">
-        <li>Archives</li>
-        <li>Categories</li>
-        <li>Projects</li>
-        <li>About</li>
-      </ul>
-    </nav>
-  </div>
-  <div class="header_right">
-    <div class="btn btn--search"></div>
-  </div>
+  </nav>
 </header>

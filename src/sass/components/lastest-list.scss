@@ -1,0 +1,12 @@
+.lastest-list {
+  @include list-reset();
+}
+
+.lastest-list_item {
+  display: block;
+  line-height: 30px;
+  font-size: $fontSizeSmall;
+  > a {
+    @include link-reset($black);
+  }
+}

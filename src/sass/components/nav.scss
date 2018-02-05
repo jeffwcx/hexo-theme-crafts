@@ -1,0 +1,19 @@
+.nav {
+  @include row-x(between);
+  @include isGrow();
+}
+
+.nav_list {
+  @include row-x(left);
+  @include list-reset();
+}
+
+.nav_list_item {
+  padding: 0 20px;
+  line-height: 40px;
+  font-size: $fontSizeXMiddle;
+  > a {
+    display: inline-block;
+    @include link-reset($black);
+  }
+}

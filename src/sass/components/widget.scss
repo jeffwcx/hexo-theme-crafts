@@ -1,0 +1,20 @@
+.widget {
+  padding-left: 12px;
+}
+
+.widget_title {
+  line-height: 40px;
+  font-size: $fontSizeMiddle;
+}
+
+.widget--lastest {
+  > .widget_content {
+     margin-top: 10px;
+  }
+}
+
+.widget--tags {
+  > .widget_content {
+    margin-top: 4px;
+  }
+}

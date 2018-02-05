@@ -1,0 +1,8 @@
+$height: 86px;
+.footer {
+  height: $height;
+  box-sizing: border-box;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  @include row-x(between);
+}

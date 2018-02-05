@@ -1,17 +1,17 @@
 <div class="widget widget--tags">
-  <div class="widget_title">Tags</div>
+  <div class="widget_title">TAGS</div>
   <div class="widget_content">
     <div class="tags">
-      <div class="tag">webpack</div>
-      <div class="tag">javascript</div>
-      <div class="tag">babel</div>
-      <div class="tag">css</div>
-      <div class="tag">vue-router</div>
-      <div class="tag">smacss</div>
-      <div class="tag">react</div>
-      <div class="tag">react</div>
-      <div class="tag">react</div>
-      <div class="tag">react</div>
+      <div class="tag"><a href="">Webpack</a></div>
+      <div class="tag"><a href="">JavaScript</a></div>
+      <div class="tag"><a href="">Babel</a></div>
+      <div class="tag"><a href="">CSS</a></div>
+      <div class="tag"><a href="">vue-router</a></div>
+      <div class="tag"><a href="">SMACSS</a></div>
+      <div class="tag"><a href="">React</a></div>
+      <div class="tag"><a href="">flux</a></div>
+      <div class="tag"><a href="">Vue</a></div>
+      <div class="tag"><a href="">WebRTC</a></div>
     </div>
   </div>
 </div>

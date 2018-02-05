@@ -10,6 +10,23 @@
 
 // layout
 @import "../layout/container";
+@import "../layout/index-content";
+@import "../layout/header";
+@import "../layout/left-panel";
+@import "../layout/footer";
 
 // components
-@import "../components/common/header";
+// header
+@import "../components/logo";
+@import "../components/nav";
+
+// leftpanel
+@import "../components/widget";
+@import "../components/lastest-list";
+@import "../components/tags";
+@import "../components/tag";
+
+@import "../components/toppost";
+
+// footer
+@import "../components/site-info";

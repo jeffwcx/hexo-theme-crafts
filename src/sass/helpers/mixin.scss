@@ -50,8 +50,15 @@
 
 //===================== list =======================
 
-@mixin list-reset() {
+@mixin list-reset () {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+//===================== link =======================
+
+@mixin link-reset ($color) {
+  text-decoration: none;
+  color: $color;
 }

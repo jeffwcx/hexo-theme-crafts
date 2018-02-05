@@ -1,9 +1,10 @@
 <section class="toppost">
-  <div class="toppost_left">
-    <div class="toppost_title">Categorizing CSS Rule All</div>
-    <div class="toppost_info">2 hours ago by JeffWang</div>
+  <div class="toppost_title">Categorizing CSS Rule AllCategorizing CSS Rule AllCategorizing CSS Rule All</div>
+  <div class="toppost_info">2 hours ago by JeffWang</div>
+  <div class="toppost_summary">
+      Every project needs some organization. Throwing every new style you create onto the end of a single file would make finding things more difficult and would be very confusing for anybody else working on the project. Of course, you likely have some organization in place already. Hopefully, what you read among these pages will highlight what works with your existing process.
   </div>
-  <div class="toppost_right">
+  <div class="toppost_bigpic">
     <img src="" alt="Categorizing CSS Rule All">
   </div>
 </section>

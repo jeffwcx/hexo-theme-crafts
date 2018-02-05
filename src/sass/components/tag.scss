@@ -1,0 +1,11 @@
+.tag {
+  display: inline-block;
+  padding: 8px;
+  font-size: $fontSizeSmall;
+  background: $lightYellow;
+  color: $black;
+  border-radius: 4px;
+  > a {
+    @include link-reset($black);
+  }
+}

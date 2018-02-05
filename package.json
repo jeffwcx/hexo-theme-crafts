@@ -63,7 +63,7 @@
     "url": "https://github.com/jeffwcx/hexo-theme-crafts.git"
   },
   "dependencies": {
-    "layit.css": "^0.1.2",
+    "layit.css": "^0.1.4",
     "normalize.css": "^7.0.0"
   },
   "config": {

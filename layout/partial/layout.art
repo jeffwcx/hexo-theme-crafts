@@ -9,8 +9,10 @@
 </head>
 <body>
   <div class="container">
-    {{block 'header'}}{{/block}}
-    {{block 'main'}}{{/block}}
+    <section class="main">
+      {{block 'header'}}{{/block}}
+      {{block 'main'}}{{/block}}
+    </section>
     {{block 'footer'}}{{/block}}
     {{block 'scripts'}} {{/block}}
   </div>
