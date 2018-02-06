@@ -1,6 +1,6 @@
 <header class="header">
   <div class="logo">
-    <img src="" alt="jeff">
+    <img src="/assets/images/logo.png" alt="jeff">
   </div>
   <nav class="nav">
     <ul class="nav_list">
@@ -10,7 +10,11 @@
       <li class="nav_list_item"><a href="">About</a></li>
     </ul>
     <div class="nav_opts">
-      <div class="btn btn--search"></div>
+      <button class="btn btn--icon">
+        <svg class="icon icon-24" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="/assets/sprite.svg#search"></use>
+        </svg>
+      </button>
     </div>
   </nav>
 </header>

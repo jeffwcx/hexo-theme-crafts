@@ -14,7 +14,8 @@
       {{block 'main'}}{{/block}}
     </section>
     {{block 'footer'}}{{/block}}
-    {{block 'scripts'}} {{/block}}
   </div>
+  <script src="/js/common.js"></script>
+  {{block 'scripts'}} {{/block}}
 </body>
 </html>

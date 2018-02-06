@@ -5,8 +5,8 @@
 */
 
 @import "../settings/settings";
-@import "../global/_all";
 @import "../helpers/_all";
+@import "../global/_all";
 
 // layout
 @import "../layout/container";
@@ -16,6 +16,7 @@
 @import "../layout/footer";
 
 // components
+
 // header
 @import "../components/logo";
 @import "../components/nav";
@@ -30,3 +31,4 @@
 
 // footer
 @import "../components/site-info";
+@import "../components/contract";

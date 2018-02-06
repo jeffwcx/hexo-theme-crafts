@@ -10,9 +10,13 @@
   padding-left: 10px;
   font-size: $fontSizeMax;
   line-height: 70px;
+  color: $black;
   background: rgba($color: $yellow, $alpha: 0.5);
   @include text-ellipsis();
   z-index: 10;
+  > a {
+    @include link-reset($black);
+  }
 }
 
 .toppost_info {

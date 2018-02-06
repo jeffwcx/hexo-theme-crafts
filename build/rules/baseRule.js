@@ -51,7 +51,10 @@ module.exports = [
     use: [
       {
         loader: 'svg-sprite-loader',
-        options: { extract: true }
+        options: {
+          extract: true,
+          spriteFilename: svgPath => `assets/sprite.svg`
+        }
       },
       'svgo-loader'
     ],
@@ -68,7 +71,7 @@ module.exports = [
         }
       }
     ],
-    exclude: [resolve('src/asset/icons')]
+    exclude: [resolve('src/assets/icons')]
   },
   {
     test: /\.(png|jpe?g|gif|webp)$/,

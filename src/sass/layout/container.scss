@@ -2,6 +2,7 @@ $defaultWidth: 1000px !default;
 .container {
   @include col-y(between);
   width: $defaultWidth;
+  padding: 0 20px;
   margin: auto;
   min-height: 100%;
   overflow: auto;

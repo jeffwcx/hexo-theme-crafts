@@ -8,5 +8,8 @@
   font-size: $fontSizeSmall;
   > a {
     @include link-reset($black);
+    &:hover {
+      color: $yellow;
+    }
   }
 }
