@@ -6,7 +6,9 @@
   display: block;
   line-height: 30px;
   font-size: $fontSizeSmall;
+  @include text-ellipsis();
   > a {
+    overflow: hidden;
     @include link-reset($black);
     &:hover {
       color: $yellow;

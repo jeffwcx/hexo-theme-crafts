@@ -1,9 +1,13 @@
-$defaultWidth: 1000px !default;
+$defaultWidth: 1080px !default;
 .container {
   @include col-y(between);
   width: $defaultWidth;
-  padding: 0 20px;
+  padding: 0 40px;
+  box-sizing: border-box;
   margin: auto;
   min-height: 100%;
   overflow: auto;
+  @media screen and (max-width: 1080px) {
+    width: 100%;
+  }
 }

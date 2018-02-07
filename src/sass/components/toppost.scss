@@ -6,7 +6,7 @@
 
 .toppost_title {
   position: relative;
-  max-width: 596px;
+  max-width: 82.5485%;
   padding-left: 10px;
   font-size: $fontSizeMax;
   line-height: 70px;
@@ -17,6 +17,20 @@
   > a {
     @include link-reset($black);
   }
+  @media screen and (max-width: 880px) {
+    margin: auto;
+    font-size: $fontSizeBig;
+  }
+
+  @media screen and (max-width: 560px) {
+    max-width: 100%;
+  }
+  @media screen and (max-width: 560px) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 414px) {
+    font-size: 24px;
+  }
 }
 
 .toppost_info {
@@ -25,6 +39,9 @@
   line-height: 30px;
   font-size: $fontSizeSmall;
   font-style: italic;
+  @media screen and (max-width: 880px) {
+    text-align: center;
+  }
 }
 
 .toppost_summary {
@@ -32,7 +49,31 @@
   margin-left: 50px;
   margin-top: 40px;
   line-height: 30px;
-  font-size: $fontSizeMiddle;
+  font-size: $fontSizeNormal;
+  @media screen and (max-width: 1080px) {
+    width: 360px;
+  }
+  @media screen and (max-width: 1000px) {
+    width: 330px;
+  }
+  @media screen and (max-width: 960px) {
+    width: 300px;
+  }
+  @media screen and (max-width: 920px) {
+    width: 260px;
+  }
+  @media screen and (max-width: 880px) {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+  }
+
+  @media screen and (max-width: 560px) {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .toppost_bigpic {
@@ -52,5 +93,8 @@
     height: 100%;
     border-radius: 100%;
     background: $lightGrey;
+  }
+  @media screen and (max-width: 880px) {
+    display: none;
   }
 }

@@ -1,3 +1,42 @@
 .index-content {
+  position: relative;
   margin-top: 26px;
+  @include row-x(between);
+  @include isMulti();
 }
+
+.left-panel {
+  width: 21.2%;
+  padding-top: 78px;
+  @include row-x(center);
+  @include isMulti();
+  > .widget {
+    width: 100%;
+  }
+  > .widget--tags {
+    margin-top: 24px;
+  }
+  @media screen and (max-width: 1080px) {
+    display: none;
+    // width: 90%;
+    // margin: auto;
+    // > .widget {
+    //   width: 45%;
+    // }
+    // > .widget--tags {
+    //   margin-top: 0;
+    // }
+  }
+}
+
+.right-panel {
+  width: 72.2%;
+  @media screen and (max-width: 1080px) {
+    width: 90%;
+    margin: auto;
+  }
+  @media screen and (max-width: 560px) {
+    width: 100%;
+  }
+}
+
