@@ -10,6 +10,11 @@
         <use xlink:href="/assets/sprite.svg#rss"></use>
       </svg>
     </button>
+    <button class="btn btn--icon">
+      <svg class="icon icon-30" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="/assets/sprite.svg#rss"></use>
+      </svg>
+    </button>
   </div>
   <div class="site-info">
     <div class="site-info_powerd">

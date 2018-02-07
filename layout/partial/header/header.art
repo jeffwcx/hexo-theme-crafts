@@ -2,6 +2,13 @@
   <div class="logo">
     <img src="/assets/images/logo.png" alt="jeff">
   </div>
+  <nav class="nav-toggle">
+    <button class="btn btn--icon">
+      <svg class="icon icon-30" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="/assets/sprite.svg#bars"></use>
+      </svg>
+    </button>
+  </nav>
   <nav class="nav">
     <ul class="nav_list">
       <li class="nav_list_item"><a href="/archives">Archives</a></li>

@@ -1,8 +1,12 @@
 $height: 150px !default;
 .header {
   @include row-y(center);
+  @include row-x(between);
   height: $height;
   .logo {
     margin-right: 38px;
+    @media screen and (max-width: 800px) {
+      margin: auto;
+    }
   }
 }

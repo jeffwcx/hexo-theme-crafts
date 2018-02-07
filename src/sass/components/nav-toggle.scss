@@ -1,0 +1,6 @@
+.nav-toggle {
+  display: none;
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
+}
