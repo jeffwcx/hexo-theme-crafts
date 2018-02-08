@@ -9,7 +9,7 @@ $height: 86px;
   @media screen and (max-width: 560px) {
     > .contract {
       width: 100%;
-      @include row-x(around);
+      @include row-x(center);
     }
     > .site-info {
       width: 100%;

@@ -3,6 +3,9 @@
   margin-top: 26px;
   @include row-x(between);
   @include isMulti();
+  @media screen and (max-width: 800px) {
+    margin-top: 10px;
+  }
 }
 
 .left-panel {
@@ -18,14 +21,6 @@
   }
   @media screen and (max-width: 1080px) {
     display: none;
-    // width: 90%;
-    // margin: auto;
-    // > .widget {
-    //   width: 45%;
-    // }
-    // > .widget--tags {
-    //   margin-top: 0;
-    // }
   }
 }
 

@@ -1,9 +1,10 @@
 .nav {
   @include row-x(between);
   @include isGrow();
-  @media screen and (max-width: 800px) {
-    display: none;
-  }
+}
+
+.nav_opts {
+  margin-right: 36px;
 }
 
 .nav_list {
