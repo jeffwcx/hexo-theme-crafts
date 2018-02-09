@@ -7,7 +7,12 @@ $defaultWidth: 1080px !default;
   margin: auto;
   min-height: 100%;
   overflow: auto;
+  transition: all 800ms ease;
   @media screen and (max-width: 1080px) {
     width: 100%;
   }
+}
+
+.sidebar.is-active ~ .container {
+  transform: translate3d(280px, 0, 0);
 }

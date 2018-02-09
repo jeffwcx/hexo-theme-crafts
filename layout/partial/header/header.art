@@ -1,7 +1,7 @@
 <header class="header">
   <nav class="nav-toggle">
     <button class="btn btn--icon">
-      <svg class="icon icon-30" xmlns="http://www.w3.org/2000/svg">
+      <svg class="icon icon-24" xmlns="http://www.w3.org/2000/svg">
         <use xlink:href="/assets/sprite.svg#bars"></use>
       </svg>
     </button>
@@ -17,11 +17,16 @@
       <li class="nav_list_item"><a href="">About</a></li>
     </ul>
     <div class="nav_opts">
-      <button class="btn btn--icon">
-        <svg class="icon icon-24" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="/assets/sprite.svg#search"></use>
-        </svg>
-      </button>
+      <div class="search">
+        <button class="btn btn--icon">
+          <svg class="icon icon-24" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="/assets/sprite.svg#search"></use>
+          </svg>
+        </button>
+        <div class="search_input">
+          <input type="text" autocomplete="off" autofocus>
+        </div>
+      </div>
     </div>
   </nav>
 </header>

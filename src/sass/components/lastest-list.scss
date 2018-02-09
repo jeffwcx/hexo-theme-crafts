@@ -11,7 +11,7 @@
     overflow: hidden;
     @include link-reset($black);
     &:hover {
-      color: $yellow;
+      color: $mediumBlack;
     }
   }
 }

@@ -68,3 +68,12 @@
   text-decoration: none;
   color: $color;
 }
+
+//===================== input =======================
+
+@mixin input-reset () {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 0;
+}

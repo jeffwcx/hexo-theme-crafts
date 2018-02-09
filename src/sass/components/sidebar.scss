@@ -1,0 +1,27 @@
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100%;
+  padding-top: 10px;
+  background: $mediumBlack;
+  transition: all 800ms ease;
+  transform: translate3d(-280px, 0, 0);
+  &.is-active {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.sidebar_item {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: left;
+  > a {
+    display: block;
+    box-sizing: border-box;
+    padding-left: 40px;
+    @include link-reset($white);
+  }
+}

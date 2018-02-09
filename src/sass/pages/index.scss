@@ -16,10 +16,14 @@
 
 // components
 
+// sidebar
+@import "../components/sidebar";
+
 // header
 @import "../components/logo";
 @import "../components/nav";
 @import "../components/nav-toggle";
+@import "../components/search";
 
 // leftpanel
 @import "../components/widget";

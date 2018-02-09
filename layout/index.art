@@ -5,6 +5,11 @@
 <link rel="stylesheet" href="/css/index.css">
 {{/block}}
 
+{{block 'out'}}
+  {{include './partial/common/mask.art'}}
+  {{include './partial/common/sidebar.art'}}
+{{/block}}
+
 {{block 'header'}}
   {{include './partial/header/header.art'}}
 {{/block}}

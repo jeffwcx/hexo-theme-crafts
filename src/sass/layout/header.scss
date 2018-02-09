@@ -19,9 +19,15 @@ $height: 150px !default;
       margin-right: 0;
     }
   }
-  > .nav {
-    @media screen and (max-width: 800px) {
+  @media screen and (max-width: 800px) {
+    .nav {
+      flex-grow: 0;
+    }
+    .nav > .nav_list {
       display: none;
+    }
+    .nav > .nav_opts {
+      margin-right: 0;
     }
   }
 }

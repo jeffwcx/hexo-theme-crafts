@@ -8,6 +8,7 @@
   <title>Hexo-Theme-crafts</title>
 </head>
 <body>
+  {{block 'out'}} {{/block}}
   <div class="container">
     <section class="main">
       {{block 'header'}}{{/block}}

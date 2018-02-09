@@ -20,7 +20,7 @@
     display: inline-block;
     @include link-reset($black);
     &:hover {
-      color: $yellow;
+      color: $lightBlack;
     }
   }
 }
