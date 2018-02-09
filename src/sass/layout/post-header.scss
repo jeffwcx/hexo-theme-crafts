@@ -1,0 +1,13 @@
+.post-header {
+  width: 100%;
+  height: $postHeaderHeight;
+  box-sizing: border-box;
+  padding-left: 22px;
+  padding-right: 22px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  @include row-x(between);
+  @include row-y(center);
+  background: $white;
+}

@@ -1,9 +1,7 @@
 <header class="header">
   <nav class="nav-toggle">
     <button class="btn btn--icon">
-      <svg class="icon icon-24" xmlns="http://www.w3.org/2000/svg">
-        <use xlink:href="/assets/sprite.svg#bars"></use>
-      </svg>
+      <% include('../utils/icon.art', { icon: 'bars', size: '24' }) %>
     </button>
   </nav>
   <div class="logo">
@@ -19,9 +17,7 @@
     <div class="nav_opts">
       <div class="search">
         <button class="btn btn--icon">
-          <svg class="icon icon-24" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="/assets/sprite.svg#search"></use>
-          </svg>
+          <% include('../utils/icon.art', { icon: 'search', size: '24' }) %>
         </button>
         <div class="search_input">
           <input type="text" autocomplete="off" autofocus>

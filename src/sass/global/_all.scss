@@ -4,12 +4,14 @@
 * Just import all scss files
 */
 
+@import "../settings/settings";
+@import "../helpers/_all";
 @import "reset";
 @import "animation";
 @import "state";
-@import "layout";
 
 // common components
-@import "../components/common/icon";
-@import "../components/common/btn";
-@import "../components/common/mask";
+@import "../components/base/icon";
+@import "../components/base/btn";
+@import "../components/base/mask";
+@import "../components/base/tag";

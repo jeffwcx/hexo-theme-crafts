@@ -1,0 +1,15 @@
+.post-content {
+  width: 700px;
+  padding-top: $postHeaderHeight;
+  margin: auto;
+  @media screen and (max-width: 780px) {
+    width: 100%;
+  }
+  .article_content {
+    margin-bottom: 22px;
+  }
+  > .pagination {
+    margin-top: 12px;
+    margin-bottom: 15px;
+  }
+}

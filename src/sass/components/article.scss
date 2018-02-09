@@ -1,0 +1,49 @@
+.article {
+  p::first-letter {
+    font-size: $fontSizeMax;
+  }
+}
+
+.article_title {
+  font-size: $fontSizeBig;
+  line-height: 64px;
+  text-align: left;
+}
+
+.article_info {
+  line-height: 30px;
+  color: $boldYellow;
+}
+
+.article_content {
+  font-size: $fontSizeNormal;
+  line-height: 28px;
+}
+
+.article_opts {
+  min-height: 40px;
+  line-height: 40px;
+  @include row-x(between);
+  @include row-y(center);
+  @include isMulti();
+}
+
+.article_tags {
+  font-size: 0;
+  > a {
+    font-size: $fontSizeNormal;
+    @include link-reset($boldYellow);
+    @include text-hover;
+    margin-right: 8px;
+  }
+}
+
+.article_share {
+  height: 100%;
+}
+
+.article_share_title {
+  margin-right: 8px;
+  font-size: $fontSizeNormal;
+  color: $black;
+}

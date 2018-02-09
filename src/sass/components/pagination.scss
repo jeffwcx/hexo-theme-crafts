@@ -1,0 +1,10 @@
+.pagination {
+  @include row-x(center);
+}
+.pagination_btn {
+  margin: 0 8px;
+  &:hover {
+    color: $white;
+    background-color: rgba($color: $yellow, $alpha: 0.7);
+  }
+}

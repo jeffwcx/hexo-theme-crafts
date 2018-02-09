@@ -1,0 +1,64 @@
+.comments_title {
+  height: 32px;
+  line-height: 32px;
+  font-size: $fontSizeMiddle;
+}
+
+.comments_content {
+  @include col();
+}
+
+.comment {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  &_avatar {
+    margin-right: 20px;
+  }
+}
+
+.comment_avatar {
+  @include avatar(62px, 100%);
+}
+
+.comment_userinfo {
+  @include col-y(bottom);
+}
+
+.comment_userinfo--sub {
+  @include row();
+  > .comment_name {
+    margin-right: 20px;
+  }
+  > .comment_time {
+    line-height: 30px;
+  }
+}
+
+.comment_name {
+  color: $black;
+  font-size: $fontSizeNormal;
+  line-height: 30px;
+  @include link-reset($black);
+  @include text-hover;
+}
+
+.comment_time {
+  color: $grey;
+  font-size: $fontSizeSmall;
+  line-height: 25px;
+}
+
+.comment_content {
+  font-size: $fontSizeSmall;
+  color: $black;
+  line-height: 22px;
+  margin-top: 10px;
+  a {
+    @include link-reset($yellow);
+  }
+}
+
+.subcomments {
+  padding-left: 36px;
+  margin-top: 8px;
+}

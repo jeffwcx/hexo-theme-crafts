@@ -1,19 +1,13 @@
 <footer class="footer">
   <div class="contract">
     <button class="btn btn--icon">
-      <svg class="icon icon-30" xmlns="http://www.w3.org/2000/svg">
-        <use xlink:href="/assets/sprite.svg#github"></use>
-      </svg>
+      <% include('../utils/icon.art', { icon: 'github', size: '30' }) %>
     </button>
     <button class="btn btn--icon">
-      <svg class="icon icon-30" xmlns="http://www.w3.org/2000/svg">
-        <use xlink:href="/assets/sprite.svg#rss"></use>
-      </svg>
+      <% include('../utils/icon.art', { icon: 'rss', size: '30' }) %>
     </button>
     <button class="btn btn--icon">
-      <svg class="icon icon-30" xmlns="http://www.w3.org/2000/svg">
-        <use xlink:href="/assets/sprite.svg#rss"></use>
-      </svg>
+      <% include('../utils/icon.art', { icon: 'rss', size: '30' }) %>
     </button>
   </div>
   <div class="site-info">

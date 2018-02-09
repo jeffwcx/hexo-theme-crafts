@@ -1,7 +1,6 @@
 /*!
 * Copyright 2018 jeffwang. All rights reserved.
 * Licensed under MIT
-* Index Page
 */
 
 @import "../settings/settings";
@@ -12,29 +11,20 @@
 
 // layout
 @import "../layout/container";
-@import "../layout/index-content";
-@import "../layout/header";
 @import "../layout/footer";
-
-// components
+@import "../layout/post-header";
+@import "../layout/post-content";
 
 // sidebar
 @import "../components/common/sidebar";
 
-// header
-@import "../components/logo";
-@import "../components/nav";
-@import "../components/nav-toggle";
+// post-header
 @import "../components/common/search";
 
-// leftpanel
-@import "../components/widget";
-@import "../components/lastest-list";
-@import "../components/tags";
-
-// rightpanel
-@import "../components/toppost";
-
+// post-content
+@import "../components/article";
+@import "../components/pagination";
+@import "../components/comments";
 // footer
 @import "../components/common/site-info";
 @import "../components/common/contract";

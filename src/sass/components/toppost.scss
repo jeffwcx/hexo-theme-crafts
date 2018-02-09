@@ -16,9 +16,7 @@
   z-index: 10;
   > a {
     @include link-reset($black);
-    &:hover {
-      color: $lightBlack;
-    }
+    @include text-hover;
   }
   @media screen and (max-width: 880px) {
     margin: auto;

@@ -1,6 +1,5 @@
 //===================== color =======================
-$lightBlack: #595959;
-$mediumBlack: #333;
+$lightBlack: #333;
 $black: #000;
 $white: #fff;
 $lightYellow: #fbf066;
@@ -24,3 +23,7 @@ $fontSizeMax: 50px;
 //===================== layout ======================
 
 $leftPanelWidth: 212px;
+$postHeaderHeight: 80px;
+
+//===================== state ========================
+$linkHoverColor: rgba($color: $black, $alpha: 0.7);

@@ -10,8 +10,6 @@
   > a {
     overflow: hidden;
     @include link-reset($black);
-    &:hover {
-      color: $mediumBlack;
-    }
+    @include text-hover;
   }
 }

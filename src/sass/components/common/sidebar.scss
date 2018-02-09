@@ -1,11 +1,11 @@
 .sidebar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 280px;
   height: 100%;
   padding-top: 10px;
-  background: $mediumBlack;
+  background: $lightBlack;
   transition: all 800ms ease;
   transform: translate3d(-280px, 0, 0);
   &.is-active {

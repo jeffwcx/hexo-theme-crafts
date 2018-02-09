@@ -1,9 +1,14 @@
 <header class="post-header">
-  <div class="l-left">
-    <button class="btn"></button>
-  </div>
-  <div class="l-right">
-    <button class="btn"></button>
+  <button class="btn btn--icon">
+    <% include('../utils/icon.art', { icon: 'bars', size: '30' }) %>
+  </button>
+  <div class="search">
+    <button class="btn btn--icon">
+      <% include('../utils/icon.art', { icon: 'search', size: '30' }) %>
+    </button>
+    <div class="search_input">
+      <input type="text" autocomplete="off" autofocus>
+    </div>
   </div>
 </header>
   
