@@ -1,0 +1,31 @@
+.archives {
+  > .archives_top {
+    left: -64px;
+    @media screen and (max-width: 1080px) {
+      left: -40px;
+    }
+    @media screen and (max-width: 930px) {
+      left: 0;
+    }
+  }
+}
+
+.archives_top {
+  position: relative;
+  min-height: 96px;
+  @include row-y(center);
+  @include isMulti();
+  > .archives_title {
+    margin-right: 36px;
+  }
+}
+
+.archives_title {
+  font-size: $fontSizeMax;
+  line-height: 96px;
+}
+
+.archives_content {
+  margin-top: 10px;
+  @include col();
+}

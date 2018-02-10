@@ -1,7 +1,6 @@
 /*!
 * Copyright 2018 jeffwang. All rights reserved.
 * Licensed under MIT
-* Post Page
 */
 
 @import "../settings/settings";
@@ -18,14 +17,15 @@
 
 // sidebar
 @import "../components/common/sidebar";
-
 // post-header
 @import "../components/common/search";
 
 // post-content
-@import "../components/article";
-@import "../components/pagination";
-@import "../components/comments";
+@import "../components/archive";
+@import "../components/month-archive";
+@import "../components/archive-item";
+
+
 // footer
 @import "../components/common/site-info";
 @import "../components/common/contract";

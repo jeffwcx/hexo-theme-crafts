@@ -5,6 +5,9 @@ module.exports = {
   post: {
     input: ['./src/scripts/post.js']
   },
+  archive: {
+    input: ['./src/scripts/archive.js']
+  },
   common: {
     input: ['./src/scripts/common/sprite',
       './src/scripts/common/polyfill', './src/sass/global/_all.scss']

@@ -1,12 +1,21 @@
 <!-- Archive -->
 {{extend './partial/layout.art'}}
 
+{{block 'styles'}}
+<link rel="stylesheet" href="/css/common.css">
+<link rel="stylesheet" href="/css/archive.css">
+{{/block}}
+
+{{block 'out'}}
+  {{include './partial/common/mask.art'}}
+  {{include './partial/common/sidebar.art'}}
+{{/block}}
 {{block 'header'}}
   {{include './partial/header/post-header.art'}}
 {{/block}}
 
 {{block 'main'}}
-  <section class="content">
+  <section class="post-content">
     {{include './partial/archives/archives.art'}}
   </section>
 {{/block}}
