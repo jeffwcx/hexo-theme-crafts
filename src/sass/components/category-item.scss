@@ -1,0 +1,25 @@
+.category-item {
+  margin-top: 30px;
+}
+
+.category-item_title {
+  font-size: 30px;
+  line-height: 50px;
+  text-align: center;
+  > a {
+    @include link-reset($black);
+    @include text-hover;
+  }
+}
+
+.category-item_taglist {
+  font-size: 0;
+  text-align: center;
+  margin-top: 8px;
+  > .tag {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 9px;
+    margin-right: 9px;
+  }
+}

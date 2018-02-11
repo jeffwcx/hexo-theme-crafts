@@ -2,6 +2,9 @@
   <button class="btn btn--icon">
     <% include('../utils/icon.art', { icon: 'bars', size: '30' }) %>
   </button>
+  <div class="post-header_title">
+    Writing modular CSS (Part 2) BEM Namespaces
+  </div>
   <div class="search">
     <button class="btn btn--icon">
       <% include('../utils/icon.art', { icon: 'search', size: '30' }) %>

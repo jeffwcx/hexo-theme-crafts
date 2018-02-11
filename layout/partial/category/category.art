@@ -2,12 +2,24 @@
   <div class="category_title">Categories</div>
   <div class="category_content">
     <div class="category-item">
-      <div class="category-item_title">JavaScript</div>
+      <div class="category-item_title"><a href="">JavaScript</a></div>
       <div class="category-item_taglist">
-        <div class="tag tag--medium">Compiler</div>
-        <div class="tag tag--medium">ES6</div>
-        <div class="tag tag--medium">Performance</div>
+        <div class="tag tag--medium"><a href="">Compiler</a></div>
+        <div class="tag tag--medium"><a href="">Compiler</a></div>
+        <div class="tag tag--medium"><a href="">Compiler</a></div>
       </div>
+    </div>
+    <div class="category-item">
+      <div class="category-item_title"><a href="">CSS</a></div>
+      <div class="category-item_taglist">
+        <div class="tag tag--medium"><a href="">Preprocessor</a></div>
+        <div class="tag tag--medium"><a href="">Translate</a></div>
+        <div class="tag tag--medium"><a href="">Sass</a></div>
+        <div class="tag tag--medium"><a href="">Compiler</a></div>
+      </div>
+    </div>
+    <div class="category-item">
+      <div class="category-item_title"><a href="">Node</a></div>
     </div>
   </div>
 </div>

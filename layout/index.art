@@ -24,6 +24,11 @@
     <div class="right-panel">
       {{include './partial/index/toppost.art'}}
     </div>
+    <!-- <div class="next-post">
+      <button class="btn btn--icon">
+        <% include('./partial/utils/icon.art', { icon: 'triangle', size: 30 }) %>
+      </button>
+    </div> -->
   </section>
 {{/block}}
 

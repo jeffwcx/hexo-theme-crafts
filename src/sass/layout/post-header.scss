@@ -11,4 +11,25 @@
   @include row-x(between);
   @include row-y(center);
   background: $white;
+  .search_input {
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    > input {
+      color: #000;
+      border-color: #000;
+    }
+  }
+  > .post-header_title {
+    display: none;
+    width: 56%;
+    text-align: center;
+    font-size: $fontSizeXMiddle;
+    line-height: 46px;
+    @include text-ellipsis;
+    &.is-active {
+      display: inline-block;
+    }
+  }
 }

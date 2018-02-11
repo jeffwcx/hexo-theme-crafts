@@ -4,7 +4,7 @@
 }
 
 .archive-item_title {
-  width: 70%;
+  max-width: 70%;
   display: inline-block;
   @include link-reset($black);
   @include text-ellipsis();

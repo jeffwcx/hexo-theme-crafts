@@ -10,12 +10,12 @@
   <nav class="nav">
     <ul class="nav_list">
       <li class="nav_list_item"><a href="/archives">Archives</a></li>
-      <li class="nav_list_item"><a href="">Categories</a></li>
+      <li class="nav_list_item"><a href="/category">Categories</a></li>
       <li class="nav_list_item"><a href="">Projects</a></li>
       <li class="nav_list_item"><a href="">About</a></li>
     </ul>
     <div class="nav_opts">
-      <div class="search">
+      <div class="search is-active">
         <button class="btn btn--icon">
           <% include('../utils/icon.art', { icon: 'search', size: '24' }) %>
         </button>

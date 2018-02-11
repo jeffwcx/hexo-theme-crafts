@@ -1,12 +1,24 @@
 <!-- Category -->
 {{extend './partial/layout.art'}}
 
+{{block 'styles'}}
+<link rel="stylesheet" href="/css/common.css">
+{{if page.type === 'category'}}
+<link rel="stylesheet" href="/css/category.css">
+{{/if}}
+{{/block}}
+
+{{block 'out'}}
+  {{include './partial/common/mask.art'}}
+  {{include './partial/common/sidebar.art'}}
+{{/block}}
+
 {{block 'header'}}
   {{include './partial/header/post-header.art'}}
 {{/block}}
 
 {{block 'main'}}
-  <section class="content">
+  <section class="post-content">
     {{if page.type === 'category'}}
     {{include './partial/category/category.art'}}
     {{/if}}
