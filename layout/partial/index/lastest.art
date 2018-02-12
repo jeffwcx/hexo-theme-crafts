@@ -1,22 +1,16 @@
 <div class="widget widget--lastest">
-  <div class="widget_title">LATEST</div>
+  <div class="widget_title">{{__('widget.latest')}}</div>
   <div class="widget_content">
     <ul class="lastest-list">
-      <li class="lastest-list_item">
-        <a href="">Pattern For Large-ScalePattern For Large-ScalePattern For Large-ScalePattern For Large-Scale</a>
-      </li>
-      <li class="lastest-list_item">
-        <a href="">Color Themes</a>
-      </li>
-      <li class="lastest-list_item">
-        <a href="">Questions And Answers</a>
-      </li>
-      <li class="lastest-list_item">
-        <a href="">Tag Plugins</a>
-      </li>
-      <li class="lastest-list_item">
-        <a href="">Color Themes</a>
-      </li>
+      <% page.posts.each(function(post, index) { %>
+        <% if (index <= 4 && index > 0) { %>
+        <li class="lastest-list_item">
+          <a href="{{url_for(post.path)}}">
+            {{post.title}}
+          </a>
+        </li>
+        <% } %>
+      <% }) %>
     </ul>
   </div>
 </div>

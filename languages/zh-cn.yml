@@ -1,0 +1,55 @@
+title:
+  archive: 归档
+  category: 分类
+  tag: 标签
+  about: 关于
+
+author: 作者
+
+menu:
+  home: 首页
+  archive: 归档
+  category: 分类
+  project: 项目
+  about: 关于
+
+widget:
+  latest: 最新文章
+  tag: 标签
+
+time:
+  year:
+    one: 一年前,
+    others: "%d年前"
+  month:
+    one: 1个月前
+    others: "%d个月前"
+  day:
+    one: 昨天
+    others: "%d天前"
+  hour:
+    one: 1小时前
+    others: "%d小时前"
+  minute:
+    one: 1分钟前
+    others: "%d分钟前"
+  justnow: 刚刚
+
+archive:
+  titleFormat: 'YYYY年MMM'
+
+post:
+  sign: 作者
+  share:
+    title: 分享
+    items:
+      - 微信
+      - QQ
+      - 微博
+  pagination:
+    prev: 上一篇
+    next: 下一篇
+  comment:
+    title:
+      zero: 无评论
+      other: "%d条评论"

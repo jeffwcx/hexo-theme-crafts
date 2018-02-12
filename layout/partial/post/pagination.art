@@ -1,4 +1,20 @@
 <div class="pagination">
-  <a class="btn btn--normal pagination_btn" disable>prev</a>
-  <a class="btn btn--normal pagination_btn">next</a>
+  <a class="btn btn--normal pagination_btn"
+    <% if (page.prev) { %>
+      href="{{url_for(page.prev.path)}}" 
+    <%} else {%>
+      disable
+    <% } %>
+  >
+    {{__('post.pagination.prev')}}
+  </a>
+  <a class="btn btn--normal pagination_btn"
+    <% if (page.next) { %>
+      href="{{url_for(page.next.path)}}" 
+    <%} else {%>
+      disable
+    <% } %>
+  >
+    {{__('post.pagination.next')}}
+  </a>
 </div>

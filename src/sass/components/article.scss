@@ -1,7 +1,4 @@
 .article {
-  p::first-letter {
-    font-size: $fontSizeMax;
-  }
 }
 
 .article_title {
@@ -21,16 +18,17 @@
 }
 
 .article_opts {
-  min-height: 40px;
-  line-height: 40px;
+  min-height: 45px;
   @include row-x(between);
-  @include row-y(center);
+  @include row-y(top);
   @include isMulti();
 }
 
 .article_tags {
   font-size: 0;
   > a {
+    line-height: 45px;
+    display: inline-block;
     font-size: $fontSizeNormal;
     @include link-reset($boldYellow);
     @include text-hover;
@@ -46,4 +44,9 @@
   margin-right: 8px;
   font-size: $fontSizeNormal;
   color: $black;
+  line-height: 45px;
+}
+
+.article_share_list {
+  @include row-y(center);
 }

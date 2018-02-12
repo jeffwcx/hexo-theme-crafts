@@ -1,14 +1,10 @@
 <div class="widget widget--tags">
-  <div class="widget_title">TAGS</div>
+  <div class="widget_title">{{__('widget.tag')}}</div>
   <div class="widget_content">
     <div class="tags">
-      <div class="tag"><a href="">Webpack</a></div>
-      <div class="tag"><a href="">JavaScript</a></div>
-      <div class="tag"><a href="">Babel</a></div>
-      <div class="tag"><a href="">CSS</a></div>
-      <div class="tag"><a href="">vue-router</a></div>
-      <div class="tag"><a href="">SMACSS</a></div>
-      <div class="tag"><a href="">React</a></div>
+      <% site.tags.each(function(tag) { %>
+      <div class="tag"><a href="{{url_for(tag.path)}}">{{tag.name}}</a></div>
+      <% }) %>
     </div>
   </div>
 </div>

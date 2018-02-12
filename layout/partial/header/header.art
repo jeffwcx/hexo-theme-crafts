@@ -8,14 +8,15 @@
     <img src="/assets/images/logo.png" alt="jeff">
   </div>
   <nav class="nav">
+    {{if theme.menu}}
     <ul class="nav_list">
-      <li class="nav_list_item"><a href="/archives">Archives</a></li>
-      <li class="nav_list_item"><a href="/category">Categories</a></li>
-      <li class="nav_list_item"><a href="">Projects</a></li>
-      <li class="nav_list_item"><a href="">About</a></li>
+      {{each theme.menu}}
+      <li class="nav_list_item"><a href="{{$value}}">{{__('menu.'+ $index)}}</a></li>
+      {{/each}}
     </ul>
+    {{/if}}
     <div class="nav_opts">
-      <div class="search is-active">
+      <div class="search">
         <button class="btn btn--icon">
           <% include('../utils/icon.art', { icon: 'search', size: '24' }) %>
         </button>

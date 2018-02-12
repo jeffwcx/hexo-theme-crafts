@@ -17,8 +17,8 @@
 
 {{block 'main'}}
   <section class="post-content">
-    {{include './partial/post/article.art'}}
-    {{include './partial/post/pagination.art'}}
+    <% include('./partial/post/article.art', { page, __, date, config, url_for }) %>
+    <% include('./partial/post/pagination.art', { page, __, url_for }) %>
     {{include './partial/post/comments.art'}}
   </section>
 {{/block}}

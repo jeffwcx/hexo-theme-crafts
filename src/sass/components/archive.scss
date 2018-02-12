@@ -29,3 +29,10 @@
   margin-top: 10px;
   @include col();
 }
+
+.archive-title {
+  margin-top: 14px;
+  margin-bottom: 5px;
+  line-height: 60px;
+  font-size: $fontSizeBig;
+}

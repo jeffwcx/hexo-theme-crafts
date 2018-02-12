@@ -1,6 +1,7 @@
+{{if theme.menu}}
 <div class="sidebar">
-  <div class="sidebar_item"><a href="/archives">Archives</a></div>
-  <div class="sidebar_item"><a href="">Categories</a></div>
-  <div class="sidebar_item"><a href="">Projects</a></div>
-  <div class="sidebar_item"><a href="">About</a></div>
+  {{each theme.menu}}
+  <li class="sidebar_item"><a href="{{$value}}">{{__('menu.'+ $index)}}</a></li>
+  {{/each}}
 </div>
+{{/if}}

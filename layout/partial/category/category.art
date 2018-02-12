@@ -1,25 +1,15 @@
 <div class="category">
-  <div class="category_title">Categories</div>
+  <div class="category_title">{{__('title.category')}}</div>
   <div class="category_content">
-    <div class="category-item">
-      <div class="category-item_title"><a href="">JavaScript</a></div>
-      <div class="category-item_taglist">
-        <div class="tag tag--medium"><a href="">Compiler</a></div>
-        <div class="tag tag--medium"><a href="">Compiler</a></div>
-        <div class="tag tag--medium"><a href="">Compiler</a></div>
+    <% site.categories.each(function (category) { %>
+      <div class="category-item">
+        <div class="category-item_title"><a href="{{url_for(category.path)}}">{{category.name}}</a></div>
+        <!-- <div class="category-item_taglist">
+          <div class="tag tag--medium"><a href="">Compiler</a></div>
+          <div class="tag tag--medium"><a href="">Compiler</a></div>
+          <div class="tag tag--medium"><a href="">Compiler</a></div>
+        </div> -->
       </div>
-    </div>
-    <div class="category-item">
-      <div class="category-item_title"><a href="">CSS</a></div>
-      <div class="category-item_taglist">
-        <div class="tag tag--medium"><a href="">Preprocessor</a></div>
-        <div class="tag tag--medium"><a href="">Translate</a></div>
-        <div class="tag tag--medium"><a href="">Sass</a></div>
-        <div class="tag tag--medium"><a href="">Compiler</a></div>
-      </div>
-    </div>
-    <div class="category-item">
-      <div class="category-item_title"><a href="">Node</a></div>
-    </div>
+    <% }) %>
   </div>
 </div>

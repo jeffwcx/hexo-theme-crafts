@@ -18,8 +18,8 @@
 {{block 'main'}}
   <section class="index-content">
     <div class="left-panel">
-      {{include './partial/index/lastest.art'}}
-      {{include './partial/index/tags.art'}}
+      <% include('./partial/index/lastest.art') %>
+      <% include('./partial/index/tags.art', { site, __, url_for }) %>
     </div>
     <div class="right-panel">
       {{include './partial/index/toppost.art'}}

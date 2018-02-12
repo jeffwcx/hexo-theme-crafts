@@ -1,5 +1,5 @@
 <div class="comments">
-  <div class="comments_title">100 Responses</div>
+  <div class="comments_title">{{ _p('post.comment.title', 100) }}</div>
   <div class="comments_content">
     <div class="comment">
       <div class="l-row">

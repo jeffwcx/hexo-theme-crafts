@@ -16,7 +16,49 @@
 
 {{block 'main'}}
   <section class="post-content">
-    {{include './partial/archives/archives.art'}}
+    <div class="archives">
+      <div class="archives_top">
+        {{if page.archive}}
+          <div class="archives_title">{{__('title.archive')}}</div>
+        {{/if}}
+        {{if page.category}}
+          <div class="archives_title">{{__('title.category')}}</div>
+          <div class="archives_tag">
+            <div class="tag tag--big">{{ page.category }}</div>
+          </div>
+        {{/if}}
+        {{if page.tag}}
+          <div class="archives_title">{{__('title.tag')}}</div>
+          <div class="archives_tag">
+            <div class="tag tag--big">{{ page.tag }}</div>
+          </div>
+        {{/if}}
+        
+      </div>
+      <div class="archives_content">
+        {{set last}}
+        {{set titleFormat = __('archive.titleFormat')}}
+        <% page.posts.each(function(post) { %>
+          {{set now = date(post.date, 'YYYYMM')}}
+          {{set nowMonth = date(post.date, titleFormat)}}
+          {{set nowDate = date(post.date, 'MM.DD')}}
+
+          {{if now !== last }}
+            <div class="archive-title">{{nowMonth}}</div>
+            <% last = now %>
+          {{/if}}
+          <div class="archive-item">
+            <a href="{{url_for(post.path)}}"
+               title="{{post.title}}"
+               class="archive-item_title">
+               {{post.title}}
+            </a>
+            <span class="archive-item_date">（{{nowDate}}）</span>
+          </div>
+        <% }) %>
+        
+      </div>
+    </div>        
   </section>
 {{/block}}
 

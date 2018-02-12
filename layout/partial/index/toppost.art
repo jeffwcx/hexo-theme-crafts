@@ -1,12 +1,14 @@
+{{set toppost = page.posts.eq(0)}}
 <section class="toppost">
   <div class="toppost_title">
-    <a href="/2018/01/06/hello-world/">Categorizing CSS Rule AllCategorizing CSS Rule AllCategorizing CSS Rule All</a>
+    <a href="{{url_for(toppost.path)}}">{{toppost.title}}</a>
   </div>
-  <div class="toppost_info">2 hours ago by JeffWang</div>
+  <div class="toppost_info">{{date(toppost.updated, 'YYYY MM DD hh mm ss')}} {{__('post.sign')}} {{config.author}}</div>
   <div class="toppost_summary">
-      Every project needs some organization. Throwing every new style you create onto the end of a single file would make finding things more difficult and would be very confusing for anybody else working on the project. Of course, you likely have some organization in place already. Hopefully, what you read among these pages will highlight what works with your existing process.
+    {{truncate(strip_html(toppost.content), { length: 300 })}}
   </div>
+  {{set bigPic = (toppost.photos && toppost.photos[0]) || '/assets/images/default.png'}}
   <div class="toppost_bigpic">
-    <img src="/assets/images/default.png" alt="Categorizing CSS Rule All">
+    <img src="{{bigPic}}" alt="{{toppost.title}}">
   </div>
 </section>

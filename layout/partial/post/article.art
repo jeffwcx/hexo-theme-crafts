@@ -1,19 +1,18 @@
 <article class="article">
-  <div class="article_title">Writing modular CSS (Part 2) BEM Namespaces</div>
-  <div class="article_info">20 days ago by Jeff Wang </div>
+  <div class="article_title">{{page.title}}</div>
+  <div class="article_info">{{date(page.updated, 'YYYY MM DD hh mm ss')}} {{__('post.sign')}} {{config.author}} </div>
   <div class="article_content">
-    <p>
-        Since our industry is awesome, we don’t only have one recommended solution. Experts have jumped in and provided us with suggestions like BEM, OOCSS, SMACSS, Atomic Design and many others.
-    </p>
+    {{@page.content}}
   </div>
   <div class="article_opts">
+
     <div class="article_tags">
-      <a href="">#CSS</a>
-      <a href="">#BEM</a>
-      <a href="">#NameSpace</a>
+      <% page.tags.each(function (tag) { %>
+      <a href="{{url_for(tag.path)}}">#{{tag.name}}</a>
+      <% }) %>
     </div>
     <div class="article_share l-row">
-      <div class="article_share_title">Share</div>
+      <div class="article_share_title">{{__('post.share.title')}}</div>
       <div class="article_share_list">
         <button class="btn btn--icon">
           <% include('../utils/icon.art', { icon: 'wechat', size: '24' }) %>

@@ -1,0 +1,60 @@
+title:
+  archive: Archives
+  category: Categories
+  tag: Tags
+  about: About
+
+author: Author
+
+menu:
+  home: Home
+  archive: Archives
+  category: Categories
+  project: Projects
+  about: About
+
+widget:
+  latest: LATEST
+  tag: TAG
+
+time:
+  year:
+    one: 1 year ago,
+    others: "%d years ago"
+  month:
+    one: 1 month ago
+    others: "%d months ago"
+  day:
+    one: last day
+    others: "%d days ago"
+  hour:
+    one: one hour ago
+    others: "%d hours ago"
+  minute:
+    one: one minute ago
+    others: "%d minutes ago"
+  justnow: just now
+
+archive:
+  titleFormat: 'YYYY MMM'
+
+post:
+  sign: by
+  share:
+    title: Share
+    items:
+      - WeChat
+      - QQ
+      - Weibo
+  pagination:
+    prev: prev
+    next: next
+  comment:
+    title:
+      zero: No Responses
+      one: One Response
+      other: "%d Responses"
+  
+  
+  
+
