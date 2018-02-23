@@ -18,6 +18,7 @@
   height: 50px;
   line-height: 50px;
   text-align: left;
+  @include list-reset();
   > a {
     display: block;
     box-sizing: border-box;

@@ -3,7 +3,12 @@
   <div class="toppost_title">
     <a href="{{url_for(toppost.path)}}">{{toppost.title}}</a>
   </div>
-  <div class="toppost_info">{{date(toppost.updated, 'YYYY MM DD hh mm ss')}} {{__('post.sign')}} {{config.author}}</div>
+  <div class="toppost_info">
+    <span>{{date(toppost.date, __('post.date'))}}</span>
+    <span>
+      {{__('post.sign')}} {{config.author}}
+    </span>
+  </div>
   <div class="toppost_summary">
     {{truncate(strip_html(toppost.content), { length: 300 })}}
   </div>

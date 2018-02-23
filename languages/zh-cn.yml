@@ -39,7 +39,8 @@ archive:
   titleFormat: 'YYYY年MMM'
 
 post:
-  sign: 作者
+  sign: ' '
+  date: 'YYYY年MMMDo'
   share:
     title: 分享
     items:

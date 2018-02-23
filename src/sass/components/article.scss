@@ -1,8 +1,6 @@
-.article {
-}
 
 .article_title {
-  font-size: $fontSizeBig;
+  font-size: $fontSizeXBig;
   line-height: 64px;
   text-align: left;
 }
@@ -10,6 +8,10 @@
 .article_info {
   line-height: 30px;
   color: $boldYellow;
+  font-style: italic;
+  > span {
+    margin-right: 8px;
+  }
 }
 
 .article_content {

@@ -2,16 +2,22 @@
   position: relative;
   height: 100%;
   padding-top: 27px;
+  @media screen and (max-width: 880px) {
+    text-align: center;
+  }
+
 }
 
 .toppost_title {
   display: inline-block;
   position: relative;
   max-width: 82.5485%;
+  min-width: 60%;
   box-sizing: border-box;
   padding-left: 10px;
   padding-right: 20px;
   font-size: $fontSizeMax;
+  text-align: center;
   line-height: 70px;
   color: $black;
   background: rgba($color: $yellow, $alpha: 0.5);
@@ -22,12 +28,12 @@
     @include text-hover;
   }
   @media screen and (max-width: 880px) {
-    margin: auto;
     font-size: $fontSizeBig;
   }
 
   @media screen and (max-width: 560px) {
     max-width: 100%;
+    min-width: 80%;
   }
   @media screen and (max-width: 560px) {
     font-size: 30px;
@@ -43,6 +49,9 @@
   line-height: 30px;
   font-size: $fontSizeSmall;
   font-style: italic;
+  > span {
+    margin-right: 8px;
+  }
   @media screen and (max-width: 880px) {
     text-align: center;
   }
@@ -54,6 +63,7 @@
   margin-top: 40px;
   line-height: 30px;
   font-size: $fontSizeNormal;
+  text-align: left;
   @media screen and (max-width: 1080px) {
     width: 360px;
   }

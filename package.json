@@ -64,7 +64,8 @@
   },
   "dependencies": {
     "layit.css": "^0.1.4",
-    "normalize.css": "^7.0.0"
+    "normalize.css": "^7.0.0",
+    "post-style": "^1.0.2"
   },
   "config": {
     "commitizen": {

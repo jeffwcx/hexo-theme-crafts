@@ -1,7 +1,14 @@
 <article class="article">
   <div class="article_title">{{page.title}}</div>
-  <div class="article_info">{{date(page.updated, 'YYYY MM DD hh mm ss')}} {{__('post.sign')}} {{config.author}} </div>
-  <div class="article_content">
+  <div class="article_info">
+    <span>
+        {{date(page.date, __('post.date'))}}
+    </span>
+    <span>
+        {{__('post.sign')}} {{config.author}}
+    </span>
+  </div>
+  <div class="article_content markdown">
     {{@page.content}}
   </div>
   <div class="article_opts">

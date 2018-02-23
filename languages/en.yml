@@ -17,29 +17,12 @@ widget:
   latest: LATEST
   tag: TAG
 
-time:
-  year:
-    one: 1 year ago,
-    others: "%d years ago"
-  month:
-    one: 1 month ago
-    others: "%d months ago"
-  day:
-    one: last day
-    others: "%d days ago"
-  hour:
-    one: one hour ago
-    others: "%d hours ago"
-  minute:
-    one: one minute ago
-    others: "%d minutes ago"
-  justnow: just now
-
 archive:
   titleFormat: 'YYYY MMM'
 
 post:
   sign: by
+  date: 'MMMM Do YYYY'
   share:
     title: Share
     items:
