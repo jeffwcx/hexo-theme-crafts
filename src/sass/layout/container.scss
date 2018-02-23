@@ -7,7 +7,7 @@ $defaultWidth: 1080px !default;
   margin: auto;
   min-height: 100%;
   overflow: auto;
-  transition: all 800ms ease;
+  transition: all 500ms ease;
   @media screen and (max-width: 1080px) {
     width: 100%;
   }

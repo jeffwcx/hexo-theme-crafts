@@ -1,6 +1,6 @@
 <header class="header">
   <nav class="nav-toggle">
-    <button class="btn btn--icon">
+    <button id="j_sidebar_btn" class="btn btn--icon">
       <% include('../utils/icon.art', { icon: 'bars', size: '24' }) %>
     </button>
   </nav>
@@ -17,7 +17,7 @@
     {{/if}}
     <div class="nav_opts">
       <div class="search">
-        <button class="btn btn--icon">
+        <button id="j_search_btn" class="btn btn--icon">
           <% include('../utils/icon.art', { icon: 'search', size: '24' }) %>
         </button>
         <div class="search_input">

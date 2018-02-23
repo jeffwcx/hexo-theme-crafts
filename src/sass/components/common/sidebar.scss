@@ -2,11 +2,12 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999999;
   width: 280px;
   height: 100%;
   padding-top: 10px;
   background: $lightBlack;
-  transition: all 800ms ease;
+  transition: all 300ms ease;
   transform: translate3d(-280px, 0, 0);
   &.is-active {
     transform: translate3d(0, 0, 0);
