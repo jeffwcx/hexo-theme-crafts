@@ -9,7 +9,6 @@
 {{/block}}
 
 {{block 'out'}}
-  {{include './partial/common/mask.art'}}
   {{include './partial/common/sidebar.art'}}
 {{/block}}
 

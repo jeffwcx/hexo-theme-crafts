@@ -18,7 +18,7 @@ widget:
   tag: TAG
 
 archive:
-  titleFormat: 'YYYY MMM'
+  titleFormat: 'MMMM YYYY'
 
 post:
   sign: by

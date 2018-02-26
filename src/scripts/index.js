@@ -7,6 +7,7 @@
 import '../sass/pages/index.scss'
 
 import { $, toggleClass } from './common/dom'
+import Mask from './components/mask'
 
 document.addEventListener('DOMContentLoaded', () => {
   const activeClass = 'is-active'
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const sidebarBtnEle = $('#j_sidebar_btn')
   sidebarBtnEle.addEventListener('click', () => {
     toggleClass(sidebarEle, activeClass)
+    Mask.open()
   }, false)
 
   const searchEle = $('.search')

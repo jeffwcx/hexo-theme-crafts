@@ -3,11 +3,19 @@
   position: fixed;
   top: 0;
   left: 0;
+  opacity: 0;
   z-index: 9999;
   width: 100%;
   height: 100%;
   background: rgba($color: $black, $alpha: 0.7);
-  &.is-active {
+  transition: opacity 300ms ease-in-out;
+  &.is-mask-active {
     display: block;
+  }
+  &.is-mask-unvisible {
+    opacity: 0;
+  }
+  &.is-mask-visible {
+    opacity: 1;
   }
 }
