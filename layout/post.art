@@ -22,6 +22,10 @@
   </section>
 {{/block}}
 
+{{block 'scripts'}}
+<script src="/js/post.js"></script>
+{{/block}}
+
 {{block 'footer'}}
   {{include './partial/footer/footer.art'}}
 {{/block}}

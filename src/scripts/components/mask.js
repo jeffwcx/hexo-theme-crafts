@@ -11,6 +11,11 @@ if (window.ontransitionend === undefined &&
   TRANSITIONEND = 'webkitTransitionEnd'
 }
 
+const UNACTIVE = 0
+const TOACTIVE = 1
+const ACTIVE = 2
+const TOUNACTIVE = 3
+
 const Mask = {
   el: null,
   transition: {
@@ -19,7 +24,7 @@ const Mask = {
     toActive: 'is-mask-visible',
     toUnactive: 'is-mask-unvisible'
   },
-  state: 'unactive',
+  state: UNACTIVE,
   openStack: {},
   closeStack: {},
   _init () {
@@ -32,18 +37,23 @@ const Mask = {
     if (!this.el) {
       this.el = document.createElement('div')
       this.el.className = this.transition.unactive
-      this.state = 'unactive'
       document.body.appendChild(this.el)
       this.el.addEventListener('click', () => {
         this.close()
       }, false)
+      window.addEventListener('keydown', (evt) => {
+        if (evt.keyCode === 27) {
+          this.close()
+        }
+      }, false)
     }
-    Object.keys(this.openStack.cbs).forEach((id) => {
-      this.openStack.cbs[id]()
-    })
+    if (this.state === ACTIVE) return
     addClass(this.el, this.transition.active)
+    this.state = TOACTIVE
     setTimeout(() => {
       addClass(this.el, this.transition.toActive)
+      this.state = ACTIVE // todo
+      Object.keys(this.openStack.cbs).forEach(id => this.openStack.cbs[id]())
     }, 0)
     return this
   },
@@ -55,10 +65,7 @@ const Mask = {
   },
 
   close () {
-    if (!this.el) return
-    Object.keys(this.closeStack.cbs).forEach((id) => {
-      this.closeStack.cbs[id]()
-    })
+    if (!this.el || (this.state === UNACTIVE || this.state === TOUNACTIVE)) return
     const t = this
     function onEnd () {
       t._transitionEnd()
@@ -67,7 +74,8 @@ const Mask = {
     removeClass(this.el, this.transition.toActive)
     this.el.addEventListener(TRANSITIONEND, onEnd)
     addClass(this.el, this.transition.toUnactive)
-    this.state = 'toUnactive'
+    this.state = TOUNACTIVE
+    Object.keys(this.closeStack.cbs).forEach(id => this.closeStack.cbs[id]())
     return this
   },
 
@@ -80,7 +88,7 @@ const Mask = {
   _transitionEnd () {
     removeClass(this.el, this.transition.active)
     removeClass(this.el, this.transition.toUnactive)
-    this.state = 'unactive'
+    this.state = UNACTIVE
   }
 }
 

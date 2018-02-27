@@ -12,10 +12,12 @@
   @include row-y(center);
   background: $white;
   .search_input {
-    height: 80px;
+    width: calc(100% - 136px);
     position: absolute;
     top: 0;
-    left: 0;
+    left: 68px;
+    box-sizing: border-box;
+    height: 80px;
     > input {
       color: #000;
       border-color: #000;

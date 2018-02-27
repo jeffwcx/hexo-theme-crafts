@@ -18,4 +18,8 @@ export default class Component {
     }
     return ele
   }
+
+  merge (def, opts) {
+    this.opts = Object.assign({}, def, opts)
+  }
 }
