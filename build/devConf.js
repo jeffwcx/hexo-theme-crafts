@@ -16,5 +16,10 @@ module.exports = {
   },
   plugins: devPlugin,
   devtool: '#source-map',
+  resolve: {
+    alias: {
+      'ohu-share$': 'ohu-share/dist/ohu-share.js'
+    }
+  },
   watch: true
 }

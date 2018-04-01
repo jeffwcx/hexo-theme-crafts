@@ -21,13 +21,13 @@
     <div class="article_share l-row">
       <div class="article_share_title">{{__('post.share.title')}}</div>
       <div class="article_share_list">
-        <button class="btn btn--icon">
+        <button data-share="wechat" class="btn btn--icon">
           <% include('../utils/icon.art', { icon: 'wechat', size: '24' }) %>
         </button>
-        <button class="btn btn--icon">
+        <button data-share="qq" class="btn btn--icon">
           <% include('../utils/icon.art', { icon: 'qq', size: '24' }) %>
         </button>
-        <button class="btn btn--icon">
+        <button data-share="weibo" class="btn btn--icon">
           <% include('../utils/icon.art', { icon: 'weibo', size: '24' }) %>
         </button>
       </div>

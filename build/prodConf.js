@@ -15,5 +15,10 @@ module.exports = {
     rules: baseRule
   },
   plugins: prodPlugin,
-  devtool: '#source-map'
+  devtool: '#source-map',
+  resolve: {
+    alias: {
+      'ohu-share$': 'ohu-share/dist/ohu-share.js'
+    }
+  }
 }
