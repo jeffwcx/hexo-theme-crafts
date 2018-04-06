@@ -6,11 +6,15 @@
   "plugins": [
       "import",
       "promise",
-      "html"
+      "html",
+      "lodash"
   ],
   "env": {
       "browser": true,
       "es6": true,
       "node": true
+  },
+  "globals": {
+    "algoliasearch": true
   }
 }

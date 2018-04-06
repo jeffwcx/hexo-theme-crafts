@@ -17,9 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
   })
   sidebar.bind()
   const img = $('.article_content img')
+  const content = $('.article_content p')
   const share = new Share({
     title: $('.article_title').textContent,
-    desc: $('.article_content p').textContent.substr(0, 40) + '...',
+    desc: content ? content.textContent.substr(0, 40) + '...' : document.title,
     icon: img ? img.src : 'https://avatars3.githubusercontent.com/u/14073775?s=40&v=4',
     link: window.location.href,
     from: 'ohu的博客'
@@ -34,8 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
   share.mount()
 
   const search = new Search('.search', {
-    btn: '#j_search_btn',
-    hasMask: false
+    btn: '#j_search_btn'
   })
   search.bind()
 }, false)

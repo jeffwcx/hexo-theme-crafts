@@ -4,17 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <%- algolia_search_config() %>
   {{block 'styles'}}{{/block}}
   <title>Hexo-Theme-crafts</title>
 </head>
 <body>
   {{block 'out'}} {{/block}}
-  <div class="container">
-    <section class="main">
-      {{block 'header'}}{{/block}}
-      {{block 'main'}}{{/block}}
-    </section>
-    {{block 'footer'}}{{/block}}
+  <% include('./common/search.art') %>
+  <div class="wrapper">
+    <div class="container">
+      <section class="main">
+        {{block 'header'}}{{/block}}
+        {{block 'main'}}{{/block}}
+      </section>
+      {{block 'footer'}}{{/block}}
+    </div>
   </div>
   <script src="/js/common.js"></script>
   {{block 'scripts'}} {{/block}}

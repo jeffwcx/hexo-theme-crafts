@@ -16,14 +16,9 @@
     </ul>
     {{/if}}
     <div class="nav_opts">
-      <div class="search">
-        <button id="j_search_btn" class="btn btn--icon">
-          <% include('../utils/icon.art', { icon: 'search', size: '24' }) %>
-        </button>
-        <div class="search_input">
-          <input type="text" autocomplete="off" autofocus>
-        </div>
-      </div>
+      <button id="j_search_btn" class="btn btn--icon">
+        <% include('../utils/icon.art', { icon: 'search', size: '24' }) %>
+      </button>
     </div>
   </nav>
 </header>

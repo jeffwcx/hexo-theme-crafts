@@ -11,18 +11,6 @@
   @include row-x(between);
   @include row-y(center);
   background: $white;
-  .search_input {
-    width: calc(100% - 136px);
-    position: absolute;
-    top: 0;
-    left: 68px;
-    box-sizing: border-box;
-    height: 80px;
-    > input {
-      color: #000;
-      border-color: #000;
-    }
-  }
   > .post-header_title {
     display: none;
     width: 56%;

@@ -1,0 +1,8 @@
+<script src="//cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js" defer></script>
+<div class="search">
+  <div class="search_input">
+    <input type="text" autocomplete="off" autofocus>
+  </div>
+  <ul class="search_result">
+  </ul>
+</div>

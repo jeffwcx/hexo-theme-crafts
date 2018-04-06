@@ -1,4 +1,8 @@
 $defaultWidth: 1080px !default;
+.wrapper {
+  transition: all 500ms ease;
+  height: 100%;
+}
 .container {
   @include col-y(between);
   width: $defaultWidth;
@@ -7,12 +11,11 @@ $defaultWidth: 1080px !default;
   margin: auto;
   min-height: 100%;
   overflow: auto;
-  transition: all 500ms ease;
   @media screen and (max-width: 1080px) {
     width: 100%;
   }
 }
 
-.sidebar.is-active ~ .container {
+.sidebar.is-active ~ .wrapper {
   transform: translate3d(280px, 0, 0);
 }
