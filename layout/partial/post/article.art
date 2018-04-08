@@ -7,6 +7,15 @@
     <span>
         {{__('post.sign')}} {{config.author}}
     </span>
+    <% if (page.origin) { %>
+    <span class="tag tag--small">
+      <a href="{{ page.origin.address }}">
+        {{page.origin.name}}
+      </a>
+    </span>
+    <% } else { %>
+    <span class="tag tag--small">原创</span>
+    <% } %>
   </div>
   <div class="article_content markdown">
     {{@page.content}}

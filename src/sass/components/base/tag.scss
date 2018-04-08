@@ -8,9 +8,13 @@
   > a {
     @include link-reset($black);
     &:hover {
-      text-decoration: underline;
+      color: rgba($color: $black, $alpha: 0.7);
     }
   }
+}
+
+.tag--small {
+  padding: 4px 6px;
 }
 
 .tag--big {

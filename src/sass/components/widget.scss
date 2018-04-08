@@ -17,5 +17,7 @@
 .widget--tags {
   > .widget_content {
     margin-top: 4px;
+    max-width: 200px;
+    overflow: scroll;
   }
 }

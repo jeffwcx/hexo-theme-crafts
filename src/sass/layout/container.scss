@@ -15,7 +15,3 @@ $defaultWidth: 1080px !default;
     width: 100%;
   }
 }
-
-.sidebar.is-active ~ .wrapper {
-  transform: translate3d(280px, 0, 0);
-}

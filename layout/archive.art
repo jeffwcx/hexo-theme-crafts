@@ -6,9 +6,6 @@
 <link rel="stylesheet" href="/css/archive.css">
 {{/block}}
 
-{{block 'out'}}
-  {{include './partial/common/sidebar.art'}}
-{{/block}}
 {{block 'header'}}
   {{include './partial/header/post-header.art'}}
 {{/block}}
@@ -37,11 +34,22 @@
       <div class="archives_content">
         {{set last}}
         {{set titleFormat = __('archive.titleFormat')}}
-        <% page.posts.each(function(post) { %>
+        <% site.posts.sort('date', -1).forEach(function(post) { %>
           {{set now = date(post.date, 'YYYYMM')}}
           {{set nowMonth = date(post.date, titleFormat)}}
           {{set nowDate = date(post.date, 'MM.DD')}}
+          {{set hasCategory = false}}
+          {{set hasTag = false}}
 
+          <% post.categories.forEach(function (category) { %>
+          <% if (category.name === page.category) hasCategory = true %>
+          <% }) %>
+          <% post.tags.forEach(function (tag) { %>
+          <% if (tag.name === page.tag) hasTag = true %>
+          <% }) %>
+
+          <% if (page.category && !hasCategory) { return } %>
+          <% if (page.tag && !hasTag) { return } %>
           {{if now !== last }}
             <div class="archive-title">{{nowMonth}}</div>
             <% last = now %>

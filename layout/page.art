@@ -8,10 +8,6 @@
 {{/if}}
 {{/block}}
 
-{{block 'out'}}
-  {{include './partial/common/sidebar.art'}}
-{{/block}}
-
 {{block 'header'}}
   {{include './partial/header/post-header.art'}}
 {{/block}}

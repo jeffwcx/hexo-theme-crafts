@@ -6,10 +6,6 @@
 <link rel="stylesheet" href="/css/post.css">
 {{/block}}
 
-{{block 'out'}}
-  {{include './partial/common/sidebar.art'}}
-{{/block}}
-
 {{block 'header'}}
   {{include './partial/header/post-header.art'}}
 {{/block}}

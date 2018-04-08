@@ -12,6 +12,7 @@
   {{block 'out'}} {{/block}}
   <% include('./common/search.art') %>
   <div class="wrapper">
+    {{include './common/sidebar.art'}}
     <div class="container">
       <section class="main">
         {{block 'header'}}{{/block}}
