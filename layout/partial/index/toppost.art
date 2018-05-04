@@ -10,7 +10,7 @@
     </span>
   </div>
   <div class="toppost_summary">
-    {{truncate(strip_html(toppost.content), { length: 300 })}}
+    {{truncate(strip_html(toppost.content), { length: 200 })}}
   </div>
   {{set bigPic = (toppost.photos && toppost.photos[0]) || '/assets/images/default.png'}}
   <div class="toppost_bigpic">

@@ -4,4 +4,11 @@ menu:
   home: /
   archive: /archives
   category: /category
-  project: https://github.com/jeffwcx
+  about: https://github.com/jeffwcx
+
+footer:
+  links:
+    github: https://github.com/jeffwcx
+    rss: /atom.xml
+    site: https://juejin.im/user/57b29d485bbb500062e3deab
+

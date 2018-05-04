@@ -1,14 +1,14 @@
 <footer class="footer">
   <div class="contract">
-    <button class="btn btn--icon">
-      <% include('../utils/icon.art', { icon: 'github', size: '30' }) %>
-    </button>
-    <button class="btn btn--icon">
-      <% include('../utils/icon.art', { icon: 'rss', size: '30' }) %>
-    </button>
-    <button class="btn btn--icon">
-      <% include('../utils/icon.art', { icon: 'rss', size: '30' }) %>
-    </button>
+    <% var links = theme.footer.links %>
+    <% if (config.footer && config.footer.links) { %>
+    <% links = config.footer.links %>
+    <% } %>
+    {{ each links }}
+    <a class="btn btn--icon" href="{{$value}}">
+      <% include('../utils/icon.art', { icon: $index, size: '30' }) %>
+    </a>
+    {{/each}}
   </div>
   <div class="site-info">
     <div class="site-info_powerd">

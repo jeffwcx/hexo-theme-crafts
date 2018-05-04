@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="{{config.description}}">
+  <%- favicon_tag('/assets/images/logo.png') %>
   <%- algolia_search_config() %>
   {{block 'styles'}}{{/block}}
-  <title>Hexo-Theme-crafts</title>
+  <title>{{ page.title || config.title }}</title>
 </head>
 <body>
   {{block 'out'}} {{/block}}
