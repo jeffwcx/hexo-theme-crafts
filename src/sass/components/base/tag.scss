@@ -1,4 +1,4 @@
-.tag {
+:not(.line)>.tag {
   display: inline-block;
   padding: 8px;
   font-size: $fontSizeSmall;
